@@ -1,0 +1,17 @@
+<div>
+    <form class="license-form" [formGroup]="licenseForm" (ngSubmit)="onSubmit()">
+        <select class = "license-form-item" id="product" (change)="updateDurationOptions()" formControlName='product'>
+            <option value="" disabled>Select Product</option>
+            <option *ngFor="let product of products" [value]="product">{{ product }}</option>
+        </select>
+      
+        <select class = "license-form-item" id="duration" formControlName = 'period'>
+            <option value="" disabled>Select Period</option>
+            <option *ngFor="let period of availablePeriods" [value]="period">{{ period }}</option>
+        </select>
+      
+        <input class = "license-form-item" type="number" id="number" placeholder="Enter a number" formControlName = 'count'/>
+      
+        <button class = "license-form-item" type="submit" [disabled]="licenseForm.invalid">Submit</button>
+    </form>
+  </div>

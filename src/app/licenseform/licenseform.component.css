@@ -1,0 +1,13 @@
+.license-form{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.license-form-item{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+}
