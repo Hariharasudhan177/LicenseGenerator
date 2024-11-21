@@ -10,7 +10,7 @@
             <option *ngFor="let period of availablePeriods" [value]="period">{{ period }}</option>
         </select>
       
-        <input class = "license-form-item" type="number" id="number" placeholder="Enter a number" formControlName = 'count'/>
+        <input class = "license-form-item" type="number" id="number" placeholder="Enter number of licenses" formControlName = 'count'/>
       
         <button class = "license-form-item" type="submit" [disabled]="licenseForm.invalid">Submit</button>
     </form>
